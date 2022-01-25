@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42383E1C27A000AB001BDEB1 /* OptionlessInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42383E1B27A000AB001BDEB1 /* OptionlessInput.swift */; };
 		4249A77B2799839C0052FDCD /* TamagotchiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249A77A2799839C0052FDCD /* TamagotchiAppApp.swift */; };
 		4249A77D2799839C0052FDCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249A77C2799839C0052FDCD /* ContentView.swift */; };
 		4249A77F2799839E0052FDCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4249A77E2799839E0052FDCD /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42383E1B27A000AB001BDEB1 /* OptionlessInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionlessInput.swift; sourceTree = "<group>"; };
 		4249A7772799839C0052FDCD /* TamagotchiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TamagotchiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4249A77A2799839C0052FDCD /* TamagotchiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagotchiAppApp.swift; sourceTree = "<group>"; };
 		4249A77C2799839C0052FDCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				4249A77A2799839C0052FDCD /* TamagotchiAppApp.swift */,
 				4249A77C2799839C0052FDCD /* ContentView.swift */,
 				4249A7A827998B150052FDCD /* MyTamagotchi.swift */,
+				42383E1B27A000AB001BDEB1 /* OptionlessInput.swift */,
 				4249A77E2799839E0052FDCD /* Assets.xcassets */,
 				4249A7832799839E0052FDCD /* Info.plist */,
 				4249A7802799839E0052FDCD /* Preview Content */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42383E1C27A000AB001BDEB1 /* OptionlessInput.swift in Sources */,
 				4249A7A927998B150052FDCD /* MyTamagotchi.swift in Sources */,
 				4249A77D2799839C0052FDCD /* ContentView.swift in Sources */,
 				4249A77B2799839C0052FDCD /* TamagotchiAppApp.swift in Sources */,
