@@ -29,6 +29,7 @@ struct ContentView: View {
 
 struct TamagotchiView: View {
     @StateObject var myTam = MyTamagotchi()
+        .onReceive(timer, perform: myTam.remainingTime += 1
     var body: some View {
         VStack{
             Text(myTam.name)

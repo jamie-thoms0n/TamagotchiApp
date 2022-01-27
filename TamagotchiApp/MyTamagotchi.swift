@@ -17,7 +17,8 @@ class MyTamagotchi : ObservableObject {
     @Published var timeLeftBusy: Int
     @Published var currentActivity : String
     let input = OptionlessInput()
-    
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    var remainingTime = 0
     
     
     init() {
@@ -31,16 +32,24 @@ class MyTamagotchi : ObservableObject {
         self.name = ("TimTam")
     }
     
-        func eatSnack() {
-            if hunger > 0 {
-                if isAlive == true || timeLeftBusy == 0{
-                    hunger -= 1
-                    weight += 3
-                    timeLeftBusy += 10
-                    currentActivity = "eating"
-                }
+    
+//    func thereIsTime(){
+//       // Text(time)
+//            .onReceive(timer, perform: myTam.remainingTime += 1
+//)
+//    }
+    
+    
+    func eatSnack() {
+        if hunger > 0 {
+            if isAlive == true || timeLeftBusy == 0{
+                hunger -= 1
+                weight += 3
+                timeLeftBusy += 10
+                currentActivity = "eating"
             }
         }
+    }
     
     func playGame() {
         if timeLeftBusy == 0 || isAlive == true {
@@ -48,9 +57,13 @@ class MyTamagotchi : ObservableObject {
             currentActivity = "Im playing a game"
             weight -= 1
             happiness += 5
-            if hunger < 0 { //this doesnt work yet 
-                die()
-            }
+            hunger += 3
+        }
+        if weight < 0 { //this doesnt work yet
+            self.die()
+        }
+        if hunger > 20 {
+            self.die()
         }
 //        if hunger == 0{
             //create a popup warning
